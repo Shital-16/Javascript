@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+<script>
+    var n1  = parseInt(prompt("Enter the first value"),0);
+    var n2  = parseInt(prompt("Enter the second value"),0);
+    var c   = parseInt(prompt("1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division"));
+    var ans =   0;      
+    switch(c)
+    {
+        case 1: ans = n1+n2;
+            break;
+        case 2: ans = n1-n2;
+            break;
+        case 3: ans = n1*n2;
+            break;
+        case 4: ans = n1/n2;
+            break;
+        default:  document.write("<b2>Invalid Choice <br>");  
+            break;
+    }
+
+    document.write("First Number : "+ n1 + "<br>");
+    document.writeln("Second Number : "+ n2 + "<br>"); 
+    document.write("<h2>Answer is :" + ans + "</h2><br>");
+</script>
+</head>
+<body bgcolor="lightgray">
+    
+</body>
+</html>
