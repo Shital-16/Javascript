@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var month       =   prompt("Enter the month for the Bill ");
+        var cust_id     =   parseInt(prompt("Enter the Customer Id"));
+        var cust_name   =   prompt("Enter the name of Customer");
+        var unit        =   parseInt(prompt("Enter the unit"));
+        
+        if(unit>800)
+            total_bill = unit*12;   
+        else if(unit>500)
+            total_bill = unit*8;
+        else if(unit>300)
+            total_bill = unit*6;
+        else if(unit>100)
+            total_bill = unit*4;
+        else if(unit<=100)
+            total_bill = unit*2;
+        else
+        {
+            document.write("Pleasse enter the correct unit");
+        }
+        document.write("<b> Billing Month :  </b>"+ month +"<br>");
+        document.write("<b>Customer Id : </b>"+ cust_id +"<br>");
+        document.write("<b>Customer Name : </b>"+ cust_name +"<br>");
+        document.write("<b>Used Unit : </b>"+ unit +"<br>");
+        document.write("<b>Your Total Bill is : "+ total_bill + "<b>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
